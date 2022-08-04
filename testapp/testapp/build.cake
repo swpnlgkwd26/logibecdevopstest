@@ -5,7 +5,11 @@ var buildOutputPath = basePath + "\\build_output";
 Task("CleanBuildOutput")
     .Does(() =>
     {
-        // Delete build output folder
-        if (DirectoryExists(buildOutputPath))
-            CleanDirectory(buildOutputPath);
+
+    var outputPath = buildOutputPath + "\\R__05_01_Folders.sql";
+    using (var writer = new StreamWriter(outputPath))
+    {
+        writer.Write("Hello World")
+    }
+
     });
