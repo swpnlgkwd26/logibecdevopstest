@@ -1,15 +1,11 @@
-﻿
-var basePath = MakeAbsolute(Directory(".")).ToString().Replace("/", "\\");
-var buildOutputPath = basePath + "\\build_output";
+﻿ 
 
 Task("CleanBuildOutput")
     .Does(() =>
     {
-
-    var outputPath = buildOutputPath + "\\R__05_01_Folders.sql";
-    using (var writer = new StreamWriter(outputPath))
+    using (var writer = new StreamWriter("testapp/testapp/build.ps1"))
     {
-        writer.Write("Hello World");
+        writer.WriteLine("Write-Host 'Swapnil Gaikwad Script Run 2.'");
     }
 
     });
