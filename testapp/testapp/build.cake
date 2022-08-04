@@ -9,3 +9,5 @@ Task("CleanBuildOutput")
     }
 
     });
+
+RunTarget("CleanBuildOutput");
