@@ -5,7 +5,7 @@ Task("CleanBuildOutput")
     {
     using (var writer = new StreamWriter("build.ps1"))
     {
-        writer.WriteLine("Write-Host 'Swapnil Gaikwad Script Run 2.'");
+        writer.WriteLine("\n Write-Host 'Swapnil Gaikwad Script Run 2.'");
     }
 
     });
